@@ -1,9 +1,9 @@
 {
   "routes": {
-    "/": {},
-    "/dashboard": {},
-    "/exam-scheduling": {},
-    "/notifications": {},
-    "/result-processing": {}
+    "/Exam_Scheduling_App": {},
+    "/Exam_Scheduling_App/dashboard": {},
+    "/Exam_Scheduling_App/exam-scheduling": {},
+    "/Exam_Scheduling_App/notifications": {},
+    "/Exam_Scheduling_App/result-processing": {}
   }
 }

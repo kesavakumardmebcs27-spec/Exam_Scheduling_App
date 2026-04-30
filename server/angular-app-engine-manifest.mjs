@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/Exam_Scheduling_App',
   allowedHosts: [],
   supportedLocales: {
   "en-US": ""

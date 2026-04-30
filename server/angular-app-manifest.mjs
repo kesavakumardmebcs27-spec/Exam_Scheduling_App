@@ -2,39 +2,39 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/',
+  baseHref: '/Exam_Scheduling_App/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "redirectTo": "/dashboard",
-    "route": "/"
+    "redirectTo": "/Exam_Scheduling_App/dashboard",
+    "route": "/Exam_Scheduling_App"
   },
   {
     "renderMode": 2,
-    "route": "/dashboard"
+    "route": "/Exam_Scheduling_App/dashboard"
   },
   {
     "renderMode": 2,
-    "route": "/exam-scheduling"
+    "route": "/Exam_Scheduling_App/exam-scheduling"
   },
   {
     "renderMode": 2,
-    "route": "/result-processing"
+    "route": "/Exam_Scheduling_App/result-processing"
   },
   {
     "renderMode": 2,
-    "route": "/notifications"
+    "route": "/Exam_Scheduling_App/notifications"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 435, hash: 'e6f12c6fd1175c48749ba1d59c4b78eabfd3b9760fd872dde16407a0c9c78e6a', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 948, hash: '218876a348bd10b75c3500282e62436d70247d5bdbda5c900e79e0958e758377', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'notifications/index.html': {size: 1850, hash: 'd08448fb2bd7aa6de403356a8d09c8d800a99892b68a4c4fcee1de5be69896c2', text: () => import('./assets-chunks/notifications_index_html.mjs').then(m => m.default)},
-    'dashboard/index.html': {size: 1750, hash: '2ce7f225f04ad7dde1e1455a17f7472621031dddd0729c427b1200dba683ea03', text: () => import('./assets-chunks/dashboard_index_html.mjs').then(m => m.default)},
-    'exam-scheduling/index.html': {size: 3769, hash: '652c6184cb96e75592f1ff6ac87c70a7c9f93016b19b32cbbd35d16ab5eb501f', text: () => import('./assets-chunks/exam-scheduling_index_html.mjs').then(m => m.default)},
-    'result-processing/index.html': {size: 3292, hash: '9d23b9bb8fd3d55bd4f4635cd97d7d88e610cb2951f710f6fcf40f27a9e8e35d', text: () => import('./assets-chunks/result-processing_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 455, hash: 'ba72aa38ec91eeb24005e4f57d8896a20d86918bce9a30e25365f8effe0f92aa', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 968, hash: '3bc564193914e50b551fe479f8b7da32b79a39e8add68c1a1343ebb711a58e48', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'dashboard/index.html': {size: 1770, hash: '82a5a8342f47ac5d115cd7df30e70d684ba7820060e87aaae1ac3088ea5cb272', text: () => import('./assets-chunks/dashboard_index_html.mjs').then(m => m.default)},
+    'notifications/index.html': {size: 1870, hash: 'c141be5a8f57033ebc083c04ebcf4a851ca9cd92725e178dd9db1ddb985a827d', text: () => import('./assets-chunks/notifications_index_html.mjs').then(m => m.default)},
+    'exam-scheduling/index.html': {size: 3789, hash: 'c4ce185a00a6570a777ec55f0abf4e1ce0e5859340ff349a155ad70e02de13c4', text: () => import('./assets-chunks/exam-scheduling_index_html.mjs').then(m => m.default)},
+    'result-processing/index.html': {size: 3312, hash: '9af864c1fd67e8e0fd46cd3967804685a31625a635a784fd7b6d61cf51f9ee0a', text: () => import('./assets-chunks/result-processing_index_html.mjs').then(m => m.default)},
     'styles-5INURTSO.css': {size: 0, hash: 'menYUTfbRu8', text: () => import('./assets-chunks/styles-5INURTSO_css.mjs').then(m => m.default)}
   },
 };
