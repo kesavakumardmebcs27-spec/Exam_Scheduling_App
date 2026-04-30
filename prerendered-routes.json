@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/": {},
+    "/dashboard": {},
+    "/exam-scheduling": {},
+    "/notifications": {},
+    "/result-processing": {}
+  }
+}

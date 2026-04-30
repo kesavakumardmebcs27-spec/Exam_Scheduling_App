@@ -1,0 +1,12 @@
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>ExamSystem</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles-5INURTSO.css"><style ng-app-id="ng">nav[_ngcontent-ng-c1612406447]{background-color:#f0f0f0;padding:10px}nav[_ngcontent-ng-c1612406447]   a[_ngcontent-ng-c1612406447]{margin-right:15px;text-decoration:none;color:#007bff}nav[_ngcontent-ng-c1612406447]   a[_ngcontent-ng-c1612406447]:hover{text-decoration:underline}</style></head>
+<body><!--nghm-->
+  <app-root ng-version="21.2.11" _nghost-ng-c1612406447 ngh="1" ng-server-context="ssg"><nav _ngcontent-ng-c1612406447><a _ngcontent-ng-c1612406447 routerlink="/dashboard">Dashboard</a><a _ngcontent-ng-c1612406447 routerlink="/exam-scheduling">Exam Scheduling</a><a _ngcontent-ng-c1612406447 routerlink="/result-processing">Result Processing</a><a _ngcontent-ng-c1612406447 routerlink="/notifications">Notifications</a></nav><router-outlet _ngcontent-ng-c1612406447></router-outlet><app-dashboard ngh="0"><h1>Exam System Dashboard</h1><div><h2>Upcoming Exams</h2><ul><li>Data Structures - May 1, 2024 at 10:00 in Room 101</li><li>Algorithms - May 2, 2024 at 14:00 in Room 102</li><!----></ul></div><div><h2>Students</h2><ul><li>John Doe - CS001</li><li>Jane Smith - CS002</li><!----></ul></div></app-dashboard><!----></app-root>
+<script src="main-JOS25JD6.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"7":"t0","13":"t1"},"c":{"7":[{"i":"t0","r":1,"x":2}],"13":[{"i":"t1","r":1,"x":2}]}},{"c":{"9":[{"i":"c2230982352","r":1}]}}]}</script></body></html>`;
