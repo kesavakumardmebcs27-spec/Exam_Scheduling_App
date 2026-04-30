@@ -1,0 +1,12 @@
+<h1>Notifications</h1>
+<h2>Exam Schedule Notifications</h2>
+<ul>
+  @for (exam of exams(); track exam.id) {
+    <li>Exam for {{ exam.subject }} scheduled on {{ exam.date | date }} at {{ exam.startTime }} in {{ exam.room }}.</li>
+  }
+</ul>
+
+<h2>Result Notifications</h2>
+@for (student of students(); track student.id) {
+  <li>Results for {{ student.name }} are now available. GPA: {{ examService.generateResult(student.id, student.semester).gpa }}</li>
+}

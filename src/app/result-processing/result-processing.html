@@ -1,0 +1,41 @@
+<h1>Result Processing</h1>
+<form (ngSubmit)="addMark()">
+  <label>Student: 
+    <select [(ngModel)]="newMark.studentId" name="studentId" required>
+      <option value="">Select Student</option>
+      @for (student of students(); track student.id) {
+        <option [value]="student.id">{{ student.name }}</option>
+      }
+    </select>
+  </label><br>
+  <label>Exam: 
+    <select [(ngModel)]="newMark.examId" name="examId" required>
+      <option value="">Select Exam</option>
+      @for (exam of exams(); track exam.id) {
+        <option [value]="exam.id">{{ exam.subject }}</option>
+      }
+    </select>
+  </label><br>
+  <label>Marks: <input type="number" [(ngModel)]="newMark.marks" name="marks" min="0" max="100" required /></label><br>
+  <button type="submit">Add Mark</button>
+</form>
+
+<h2>Marks Entered</h2>
+<ul>
+  @for (mark of marks(); track mark.studentId + mark.examId) {
+    <li>{{ students().find(s => s.id === mark.studentId)?.name }} - {{ exams().find(e => e.id === mark.examId)?.subject }}: {{ mark.marks }} ({{ mark.grade }})</li>
+  }
+</ul>
+
+<h2>Results</h2>
+@for (student of students(); track student.id) {
+  <div>
+    <h3>{{ student.name }}</h3>
+    <p>GPA: {{ generateResult(student.id, student.semester).gpa }}</p>
+    <ul>
+      @for (grade of generateResult(student.id, student.semester).grades; track grade.subject) {
+        <li>{{ grade.subject }}: {{ grade.grade }} ({{ grade.marks }})</li>
+      }
+    </ul>
+  </div>
+}

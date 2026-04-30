@@ -1,0 +1,17 @@
+<h1>Exam System Dashboard</h1>
+<div>
+  <h2>Upcoming Exams</h2>
+  <ul>
+    @for (exam of exams(); track exam.id) {
+      <li>{{ exam.subject }} - {{ exam.date | date }} at {{ exam.startTime }} in {{ exam.room }}</li>
+    }
+  </ul>
+</div>
+<div>
+  <h2>Students</h2>
+  <ul>
+    @for (student of students(); track student.id) {
+      <li>{{ student.name }} - {{ student.rollNumber }}</li>
+    }
+  </ul>
+</div>

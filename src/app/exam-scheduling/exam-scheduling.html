@@ -1,0 +1,29 @@
+<h1>Exam Scheduling</h1>
+<form (ngSubmit)="addExam()">
+  <label>Subject: <input [(ngModel)]="newExam.subject" name="subject" required /></label><br>
+  <label>Date: <input type="date" [(ngModel)]="newExam.date" name="date" required /></label><br>
+  <label>Start Time: <input type="time" [(ngModel)]="newExam.startTime" name="startTime" required /></label><br>
+  <label>End Time: <input type="time" [(ngModel)]="newExam.endTime" name="endTime" required /></label><br>
+  <label>Room: <input [(ngModel)]="newExam.room" name="room" required /></label><br>
+  <label>Invigilator: <input [(ngModel)]="newExam.invigilator" name="invigilator" required /></label><br>
+  <label>Max Marks: <input type="number" [(ngModel)]="newExam.maxMarks" name="maxMarks" required /></label><br>
+  <button type="submit">Add Exam</button>
+</form>
+
+@if (conflicts.length > 0) {
+  <div style="color: red;">
+    <h3>Conflicts Detected:</h3>
+    <ul>
+      @for (conflict of conflicts; track $index) {
+        <li>{{ conflict }}</li>
+      }
+    </ul>
+  </div>
+}
+
+<h2>Scheduled Exams</h2>
+<ul>
+  @for (exam of exams(); track exam.id) {
+    <li>{{ exam.subject }} - {{ exam.date | date }} {{ exam.startTime }} - {{ exam.endTime }} in {{ exam.room }} by {{ exam.invigilator }}</li>
+  }
+</ul>
